@@ -1,0 +1,633 @@
+.wrapper_page-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+}
+.body__page-2_red_halfring_big {
+    display: block;
+    width: fit-content;
+    height: 606px;
+    position: absolute;
+    top: 2300px;
+    right: 0;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.body__page-2_red_halfring_small {
+    display: block;
+    width: fit-content;
+    height: 240px;
+    position: absolute;
+    top: 4950px;
+    right: 0;   
+    @media screen and (max-width: 1024px) {
+        display: none;
+    } 
+}
+.main__text {
+    width: 690px;
+    @media screen and (max-width: 1024px) {
+        width: 714px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 728px;
+    }
+    @media screen and (max-width: 414px) {
+        width: 374px;
+    }
+    @media screen and (max-width: 320px) {
+        width: 288px;
+    }
+}
+.main__aside {
+    width: 288px;
+    @media screen and (max-width: 1024px) {
+        width: 222px;
+    }
+}
+h3 {
+    font-size: 24px;
+    max-width: 690px;
+}
+.main__image {
+    object-fit: cover;
+    width: 100%;
+    height: 331px;
+    @media screen and (max-width: 414px) {
+        height: 207px;
+    }
+}
+.main__conents p {
+    font-size: 16px;
+    font-weight: 700;
+}
+.main__bullets_first {
+    list-style-type: disc;
+    text-decoration: underline;
+    font-size: 1em;
+    @media screen and (max-width: 1024px) {
+        .main__bullets_first-forhidden {
+            display: none;
+        }
+    }
+}
+.main__bullets_first ::marker {
+    color: #03B2A5;
+    font-size: 1.3em;
+}
+.main__bullets_first ul {
+    list-style-type: none;
+}
+.main__quote {
+    background-color: #F3F7FE;
+    border: none;
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    z-index: 0;
+}
+.main__quote_marker {
+    font-size: 8em;
+    color: gainsboro;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    position: absolute;
+    z-index: -1;
+}
+.main__quote_text {
+    font-style: italic;
+    margin-top: 30px;
+}
+.main__quote_author {
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.main__bullets_second {
+    text-decoration: none;
+}
+.main__bullets_second li {
+    margin-bottom: 16px;
+}
+.main__foto-2_text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #868686;
+    margin-bottom: 24px;
+}
+.main__red-cloud {
+    width: 100%;
+    height: 168px;
+    margin: 24px 0;
+    position: relative;
+}
+.main__red-cloud p {
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    top: 20%;
+    padding: 0 15%;
+    @media screen and (max-width: 414px) {
+        top: 15%;
+        padding: 0 10%;
+    }
+    @media screen and (max-width: 320px) {
+        top: 10%;
+        padding: 0;
+    }
+}
+.main__red-cloud_image {
+    display: block;
+    position: absolute;    
+    margin: 0 33%;
+    @media screen and (max-width: 414px) {
+        margin: 0 20%;
+    }
+    @media screen and (max-width: 320px) {
+        margin: 0 7%;
+    }
+}
+.main__foto-right_text {    
+    display: flex;    
+    margin: 24px 0;
+    @media screen and (max-width: 414px) {
+        flex-direction: column;        
+    }
+}
+.main__foto-right_text img {
+    width: 294px;
+    @media screen and (max-width: 414px) {
+        width: 100%;
+    }
+}
+.main__foto-right_text p {
+    margin: 0 0 auto 24px;
+    @media screen and (max-width: 414px) {
+        margin: 16px 0;
+    }
+}
+.main__exercise {
+    background-color: #FEFAEC;
+    padding: 24px;
+    margin: 24px 0;
+    border-radius: 16px;
+}
+.main__exercise :first-child {
+    font-weight: 700;
+}
+.main__exercise_background-1 {
+    background-color: #FFF3EB;
+}
+.main__exercise_background-2 {
+    background-color: rgba(3, 178, 165, 0.1);
+}
+.main__two-foto-two-text {    
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: span (2, 1fr);
+    grid-template-rows: auto auto;
+    width: 100%;
+    @media screen and (max-width: 414px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.main__two-foto-two-text img {
+    width: 100%;
+    height: 235px;
+    grid-row: 1/2;
+    @media screen and (width: 414px) {}
+}
+.main__two-foto-two-text p {
+    margin: 0;
+}
+
+.main__logo-lightning {
+    display: block;
+    width: auto;    
+    margin: 24px auto;
+}
+.main__bottom-link {
+    width: 600px;
+    margin-bottom: 48px;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.main__bottom-link :nth-child(1n) {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2963A3;
+}
+
+.main__bottom-block {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-top: #868686 solid 1px;
+    padding: 74px 0 26px;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }    
+}
+@media screen and (max-width: 1024px) {
+    .page-2_bottom_picture {
+        display: none;
+    }
+}
+
+.main__bottom-block_text {
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    height: 280px;
+    justify-content: space-between;
+}
+.main__bottom-block_text h1 {
+    margin: 0;
+}
+.main__bottom-block_text p {
+    font-weight: 400;
+    font-size: 18px;    
+}
+.main__bottom-block_text-button {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    width: 238px;
+    height: 60px;
+    background-color: #16C8BB;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    padding: 0;    
+}
+.main__bottom-block_img {
+    width: 520px;
+    height: 330px;
+}
+.page-2_bottom_picture {
+    object-fit: cover;
+    height: 82px;
+}
+
+.main__aside_button {
+    background-color: #35B3A9;
+    width: 100%;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.main__aside_download {
+    background-color: #E6F0FD;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;    
+    margin: 88px 0 24px;
+    padding: 20px;
+}
+.main__aside_download-img {
+    margin-top: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+.main__aside_download-head {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 24px 0 8px;    
+}
+.main__aside_download-text {    
+    font-weight: 400;
+    font-size: 14px;  
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+.main__aside_psiholog {
+    border: #DEDEDE solid 1px;
+    border-radius: 16px;
+    width: auto;
+    margin-bottom: 24px;    
+    position: relative;
+    padding: 24px 16px 36px 16px;
+    @media screen and (max-width: 1024px) {
+        padding: 24px 24px 17px 24px;
+    }
+}
+.main__aside_psiholog-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 250px;
+    @media screen and (max-width: 1024px) {
+        width: 174px;
+    }
+}
+.main__aside_psiholog-filters {
+    background-color: rgba(243, 244, 248, 0.7);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 5px;
+    padding: 0 8px;
+    font-size: 12px;
+    font-weight: 500;
+    max-height: 24px;
+    top: 16px;
+    left: 16px;
+}
+.main__aside_psiholog-filters p {
+    margin-left: 4px;
+}
+.main__aside_psiholog :nth-child(2) {
+    top:48px
+}
+.main__aside_psiholog-name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 16px 0 0 0;
+}
+.main__aside_psiholog-prof {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 8px;   
+}
+.main__aside_psiholog-stage {
+    font-size: 14px;
+    font-weight: 500;
+    color: #A2A7B1;
+    margin-bottom: 16px;
+}
+.main__aside_psiholog-question {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+    border-top: #A2A7B1 solid 1px;
+    padding-top: 16px;
+    margin: 0;
+}
+.main__aside_psiholog-bullet {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    line-height: 1.5;  
+}
+.main__aside_psiholog-bullet ::marker {
+    color: #03B2A5;
+    font-size: 18px;
+    list-style-type: disc;    
+}
+.main__aside_psiholog-button {
+    width: 100%;
+    margin: 0;
+}
+.main__aside_givcare {
+    position: relative;
+    width: 100%;
+    height: 292px;  /* НЕ СМОГ ПОСТАВИТЬ ОТНОСИТЕЛЬНЫЙ РАЗМЕР auto не срабатывает */
+    margin-bottom: 42px;
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 24px;
+    }
+}
+.main__aside_givcare a {
+    position: absolute;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    z-index: 1;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 40px;    
+}
+.main__aside_givcare-cover {
+    width: 100%;
+    height: 292px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.main__aside_givcare-gift {
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    height: auto;
+    @media screen and (max-width: 1024px) {
+        height: 292px;
+    }
+}
+.main__aside_8video {
+    position: relative;
+    width: auto;    
+}
+.main__aside_8video-img {
+    border: #DEDEDE solid 1px;
+    border-radius: 24px;
+    object-fit:fill;
+    width: 100%;
+    height: 308px;
+    position: absolute;
+}
+.main__aside_8video-content {
+    position: absolute;
+    top: 0;
+    padding: 32px;
+    @media screen and (max-width: 1024px) {
+        padding: 24px;
+    }
+
+}
+.main__aside_8video-head {
+    color: #2963A3;
+    font-size: 18px;
+    font-weight: 700;
+}
+.main__aside_8video-text {
+    color: #011632;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+.main__aside_8video-price {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+}
+.main__aside_8video-button {
+    text-decoration: none;
+    background-color: #16C8BB;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 108px;
+    height: 48px;
+}
+@media screen and (max-width: 768px) {
+    .wrapper_page-2 {     
+        flex-direction: column;
+        width: 100%;
+    }
+    .main__aside {
+        width: 100%;
+    }
+    .main__aside_group-1 {
+        display: flex;
+        flex-direction: row;
+    } 
+        .main__aside_download {
+            margin: 0;
+            width: 356px;        
+            height: 481px;
+            padding: 22.55px 23px 14.45px 23px;
+            margin-right: 16px;
+        }
+        .main__aside_download-text {
+            margin: 0 0 24px;
+        }
+        .main__aside_psiholog {
+            width: 356px;
+            height: 481px;
+        }
+        .main__aside_psiholog-wrap {
+            width: 100%;
+        }
+    .main__aside_group-2 {
+        display: flex;
+        margin-bottom: 59px;
+    }
+        .main__aside_givcare {
+            width: 356px;
+            height: 242px;
+            margin-right: 16px;
+        }
+        .main__aside_8video {
+            width: 356px;
+            height: 242px;
+        }
+}
+@media screen and (max-width: 414px) {
+    .main__text h1 {
+        font-size: 32px;
+    }
+    .wrapper_page-2 {     
+        flex-direction: column;
+    }
+    .main__aside {
+        display: flex;
+        flex-direction: column;
+        width: 374px;
+    }
+    .main__aside_group-1 {
+        display: flex;
+        flex-direction: column;        
+    } 
+        .main__aside_download {
+            margin: 0;
+            width: auto;        
+            height: auto;
+            padding: 24px 32px 44px 32px;
+            margin: 0 0 24px;
+        }
+        .main__aside_download-img {
+            margin: 0;
+        }
+        .main__aside_psiholog {
+            width: auto;        
+            height: auto;
+        }
+        .main__aside_psiholog-wrap {
+            width: 100%;
+        }
+    .main__aside_group-2 {
+        display: flex;
+        flex-direction: column;        
+    }
+        .main__aside_givcare {
+            width: 374px;
+            height: 292px;            
+        }
+        .main__aside_8video {
+            width: auto;
+            height: 248px;
+            margin: 24px 0;
+        }
+}
+@media screen and (max-width: 320px) {
+    .main__text h1 {
+        font-size: 24px;
+    }
+    .wrapper_page-2 {     
+        flex-direction: column;
+    }
+    .main__aside {
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+    }
+    .main__aside_group-1 {
+        display: flex;
+        flex-direction: column;        
+    } 
+        .main__aside_download {
+            margin: 0;
+            width: auto;        
+            height: auto;
+            padding: 24px;
+            margin: 0 0 24px;
+        }
+        .main__aside_download-img {
+            margin: 0;
+        }
+        .main__aside_psiholog {
+            width: auto;        
+            height: auto;
+        }
+        .main__aside_psiholog-wrap {
+            width: 100%;
+        }
+    .main__aside_group-2 {
+        display: flex;
+        flex-direction: column;        
+    }
+        .main__aside_givcare {
+            width: 288px;
+            height: 292px;            
+        }
+        .main__aside_8video {
+            width: auto;
+            height: 252px;
+            margin: 24px 0;
+
+        }
+}

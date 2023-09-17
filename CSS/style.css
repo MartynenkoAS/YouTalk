@@ -1,0 +1,206 @@
+@import url(style_2.css);
+@import url(style_header.css);
+@import url(style_footer.css);
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;  
+  margin: 0;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  @media screen and (max-width: 1024px) {
+    max-width: 960px;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 728px;
+  }
+  @media screen and (max-width: 414px) {
+    max-width: 374px;
+  }
+  @media screen and (max-width: 320px) {
+    max-width: 288px;
+  }
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: 769px) {
+    justify-content: space-between;
+  } 
+}
+.background__image {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.main__progress-bar {
+  font-size: 12px;
+  font-weight: 400;
+}
+.main__filter {
+  margin-top: 32px;  
+  gap: 8px;  
+}
+.main__filter :nth-child(3) {
+  border-color: #16C8BB;
+  border-width: 2px;
+}
+.main__filter :hover {
+  background-color: #E3F5F5;
+}
+.main__filter-element {
+  background: none;
+	color: #333333;
+  font-weight: 600;
+  font-size: 1em;
+  font-family: inherit;
+	padding: 6px 8px;
+  border: 1px solid #C1C5CD;
+  border-radius: 24px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 414px) {
+  .main__filter :nth-child(n+4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main__filter :nth-child(n+3) {
+    display: none;
+  }
+}  
+.main__conteiner-articles {
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(6, 1fr);
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 414px) {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__conteiner-articles :nth-child(n+5) {
+    display: none;
+  }
+}
+
+.main__article {
+  display: flex;
+  flex-direction: column;
+  border: #DEDEDE solid 1px;
+  border-radius: 15px;
+  height: 499px;   
+  grid-column: span 2;
+  @media screen and (max-width: 768px) {
+    grid-column: span 1;
+  }
+}
+
+.main__article_first {
+  grid-column: span 3;  
+  @media screen and (max-width: 768px) {
+    grid-column: span 2;
+  }
+  @media screen and (max-width: 414px) {
+    grid-column: span 1;
+  }
+}
+.article__image {
+  position: relative;  
+}
+.article__image-element {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+.article__filters {
+  position: absolute;
+  top: 8px;
+  left: 8px;  
+}
+.article__filter-element {
+  background-color: rgba(193, 197, 205, 0.7);
+  margin-bottom: 8px;
+  border-color: none;
+  max-width: fit-content;
+}
+.article__text {
+  display: flex;
+  flex-direction: column;
+  margin: 16px;
+  color: #333333;
+  justify-content: space-between;
+  height: 100%;
+}
+.article__header {
+  font-size: 18px;
+  margin: 0;
+}
+.article__author {
+  color: #494949;
+  font-size: 12px;
+  margin: 4px 0 8px 0;
+}
+.article__description {
+  font-size: 1em;
+  margin: 0;  
+}
+.article__data {           
+  color: #868686;        
+  font-size: 12px;        
+  margin: 0;
+}
+
+.main__button-end {
+  width: 182px;
+  height: 48px; 
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #77CCC5;
+  color: #FFFFFF;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 56px auto 100px auto;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  margin-top: 40px;
+}
+.footer__bottom {
+  display: flex;
+  gap: 60px;
+  padding: 20px 0 37px 0;
+  border-top: #9D9D9D solid 1px;
+  font-weight: 400;
+  flex-direction: row;
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
