@@ -33,6 +33,7 @@ footer {
 .footer__email_text-bottom {
   font-size: 12px;
   font-weight: 400;
+  margin-top: 10px;
 }
 .footer__email-arrow {
   display: flex;
